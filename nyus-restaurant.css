@@ -1,0 +1,1373 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  max-width: 100%;
+}
+
+.nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s ease-in-out;
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 3%;
+  transition: all .3s ease-in-out;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: grid;
+  margin: 0;
+}
+
+.header {
+  background-image: url(homepage-hero-bg-img.jpg);
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.grid_container {
+  display: grid;
+  float: left;
+  gap: 8%;
+  margin: 5%;
+}
+
+.black_background {
+  background-color: #1A1A1A;
+  color: white;
+  margin-top: -12%;
+  text-align: center;
+}
+
+#nav_logo {
+  width: 20%;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5% 3%;
+  color: #fff;
+}
+
+#nav_buttons {
+  padding-left: 0;
+  width: 717px;
+  list-style: none;
+}
+
+#nav_buttons li {
+  display: inline-block;
+}
+
+#nav_buttons li>a {
+  flex-grow: 1;
+  flex-basis: 0;
+  width: 200px;
+  text-decoration: none;
+  margin: 15px;
+  color: white;
+  font-size: larger;
+}
+
+.nav label,
+#hamburger {
+  display: none;
+}
+
+
+.logo_name {
+  font-weight: bold;
+  position: absolute;
+  font-size: 2rem;
+}
+
+#nav_reservation button {
+  letter-spacing: 2px;
+  color: white;
+  border: none;
+  font-weight: bold;
+  background: none;
+}
+
+#nav_reservation {
+  border: 2px solid white;
+  padding: 1% 3%;
+  font-weight: bold;
+}
+
+#nav_reservation:hover {
+  border: 2px solid white;
+  box-shadow: 0px 2px 8px 2px #aaa;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.449);
+}
+
+#header_content {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+
+.low_medium_font {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0;
+  margin-top: 2%;
+}
+
+.cap_medium_bold {
+  font-weight: bolder;
+  font-size: 1.3vw;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.good_place_heading {
+  font-weight: bolder;
+  font-size: 1rem;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.signature_menu_text {
+  font-weight: bolder;
+  font-size: 1rem;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.cap_small_bold {
+  font-weight: bold;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.vl {
+  border-left: 3px solid white;
+  height: 100px;
+  margin-left: 50%;
+  margin-top: 150px;
+}
+
+#scrollnow {
+  font-weight: bolder;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+  margin: 20px;
+  opacity: 0.8;
+}
+
+.contenth1 {
+  font-size: 4vw;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.signature_menu_head {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#Good_vibes {
+  margin-top: 5%;
+}
+
+.left_sec_contenth2 {
+  font-weight: bolder;
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+
+.row_columnL {
+  float: left;
+  width: 56%;
+}
+
+.row_columnR {
+  float: left;
+  width: 44%;
+}
+
+.atmosphere_padding_R {
+  padding-right: 20%;
+}
+
+.padding_R {
+  padding-right: 20%;
+}
+
+.row p {
+  line-height: 2;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.row img {
+  height: auto;
+  width: 100%;
+}
+
+#good_vibes_img {
+  margin-top: -100px;
+}
+
+#relax-atmosphere {
+  margin-top: 150px;
+}
+
+#extra_text {
+  visibility: hidden;
+}
+
+#cofee_img {
+  margin-top: -280px;
+  position: relative;
+}
+
+#menu_content {
+  padding-top: 50px;
+  margin-top: -180px;
+  z-index: -1;
+  margin: auto 25px;
+}
+
+.ourmenu {
+  text-align: center !important;
+}
+
+.menu_items {
+  margin: 20px;
+  position: relative;
+}
+
+.menu_items:before {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: grey;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.menu_items:after {
+  content: "";
+  display: block;
+  width: 35%;
+  height: 2px;
+  background: grey;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.menu_row {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: left;
+  margin: 4% 3%;
+  gap: 10%;
+  margin-top: 50px;
+}
+
+.menu_cols {
+  border-bottom: 1px dotted #aaa;
+}
+
+.menu_heading {
+  font-weight: bolder;
+  font-size: 18px;
+  text-align: left;
+  margin: 10px 0 10px 0;
+}
+
+.menu_column div {
+  margin: 20px 0 20px 0;
+}
+
+hr {
+  border: 2px dotted grey;
+}
+
+#all_menu {
+  font-size: 18px !important;
+  border: 2px solid white !important;
+  padding: 10px 25px;
+}
+
+#all_menu:hover {
+  background-color: grey;
+  box-shadow: 0px 4px 8px 0px white;
+}
+
+.mi {
+  position: relative !important;
+  margin: 100px 3%;
+}
+
+.mi:before {
+  width: 40% !important;
+}
+
+.mi::after {
+  width: 40% !important;
+}
+
+#sign_image_container {
+  position: relative;
+  height: 450px;
+  display: block;
+  background-image: url(signeture-bg.jpg);
+  background-position: center;
+
+}
+
+.align_left {
+  text-align: left;
+  padding: 10px;
+  padding-left: 7%;
+}
+
+.left_center {
+  position: absolute;
+  top: 23%;
+  left: 0;
+}
+
+.gallery {
+  margin: 4%;
+}
+
+.gallery img {
+  padding: 1%;
+}
+
+.row_img img {
+  width: 90%;
+  height: auto;
+  margin: 2%;
+}
+
+.gallery_image {
+  float: left;
+  object-fit: fill;
+  width: 33.33%;
+
+}
+
+.team_row_column {
+  float: left;
+  width: 60%;
+}
+
+.team_row_columnL {
+  float: left;
+  width: 60%;
+}
+
+.team_row_columnR {
+  float: left;
+  width: 40%;
+}
+
+#chef-1 {
+  width: 80%;
+}
+
+.chef_container {
+  display: grid;
+  float: left;
+  margin: 4%;
+}
+
+#chef-3_copy {
+  display: none;
+}
+
+.chef_padding_R {
+  padding-right: 13%;
+}
+
+.chef_padding_R p {
+  padding-right: 15% !important;
+  font-size: 19px;
+  color: grey;
+}
+
+#chef-2 {
+  width: 100%;
+  margin-top: -350px;
+}
+
+#chef-3 {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#testimonial_image_container {
+  background-image: url(testimonail-section-bg-1.jpg);
+  height: 80%;
+}
+
+#black_transparent_bg {
+  background: rgba(0, 0, 0, 0.615);
+  width: 100%;
+  height: 100%;
+}
+
+.top_center {
+  padding-top: 100px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.quotes_avatar_card_container {
+  width: 33.33%;
+  float: left;
+  display: grid;
+  place-items: center;
+}
+
+.quotes_avatar_card {
+  background-color: #1A1A1A;
+  border-radius: 15px;
+  width: 80%;
+  height: 380px;
+  color: white;
+  text-align: center;
+}
+
+.quotes_avatar_image {
+  border: 8px solid #F5C61C;
+  border-radius: 50%;
+  margin-top: -70px;
+}
+
+.quotes_avatar_text {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 25px auto auto auto;
+  line-height: 35px;
+}
+
+.Reservation_container {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+.Reservation_container p {
+  color: grey;
+  font-size: large;
+}
+
+.Reservation_container_row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Reservation_container_col1 {
+  width: 25%;
+  float: left;
+  display: grid;
+  padding: 10% 0;
+  place-items: center;
+}
+
+.Reservation_container_col2 {
+  width: 50%;
+  padding: 10% 0;
+  float: left;
+  display: grid;
+  place-items: center;
+}
+
+.Reservation_container_col3 {
+  width: 25%;
+  float: left;
+  display: grid;
+  place-items: center;
+  padding: 10% 0 0 0;
+}
+
+#cake_image_overlay {
+  float: right;
+  margin: 13% 0;
+  width: 22%;
+  position: absolute;
+  right: 0;
+}
+
+#book_reservation {
+  border: 2px solid black;
+  padding: 14px 25px;
+  background-color: white;
+  font-weight: bold;
+}
+
+#book_reservation:hover {
+  border: 2px solid #1A1A1A;
+  box-shadow: 0px 4px 8px 0px #1A1A1A;
+  color: white;
+  background-color: #1A1A1A;
+}
+
+.footer_row {
+  margin: 8% 3%;
+}
+
+.footer_black_background {
+  background-color: #1A1A1A;
+  color: white;
+  padding-bottom: 7%;
+}
+
+.footer_col {
+  width: 25%;
+  text-align: left;
+  float: left;
+}
+
+.footer_head_font {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.footer_medium_bold {
+  font-weight: bolder;
+  line-height: 1.6;
+  padding-right: 20%;
+  color: grey;
+  overflow: hidden;
+}
+
+.top_mar_5 {
+  margin-top: 7%;
+}
+
+.top_mar_3 {
+  margin-top: 3%;
+}
+
+.fa1 {
+  font-size: 2rem !important;
+  margin: 0 3%;
+}
+
+.fa-facebook:hover {
+  color: #4267b2;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-youtube-play:hover {
+  color: #FF0000;
+}
+
+.fa-instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo {
+  width: 35px;
+  height: auto;
+}
+
+#n_logo_image {
+  width: 6vh;
+}
+
+.fa-map-marker {
+  font-size: 1.5rem !important;
+  margin-right: 2%;
+}
+
+.fa-map-marker:hover {
+  color: #F5C61C;
+}
+
+.footer_col234 {
+  padding-top: 0.5%;
+}
+
+.opening_hours_col {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.clock_icon {
+  color: white;
+  font-size: 1.7rem;
+}
+
+.fa-clock-o {
+  background: #F5C61C;
+  border-radius: 50%;
+}
+
+.clock_icon i {
+  padding: 5px;
+  height: 20%;
+}
+
+.timing {
+  margin-left: 10px;
+}
+
+#footer_reservation {
+  border: 2px solid white;
+  padding: 15px 35px;
+  color: white;
+  background-color: #1A1A1A;
+  font-weight: bold;
+}
+
+.footer_socielmedia_links {
+  width: 100%;
+}
+
+.copyright {
+  padding: 3% 3%;
+  border-top: 1px solid #aaa;
+  text-align: left;
+  color: grey;
+  background-color: #1A1A1A;
+}
+
+#copy_row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#pow_deli {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1500px) {
+  #relax-atmosphere {
+    margin-top: 10%;
+  }
+
+  #cake_image_overlay {
+    margin: 16% 0;
+  }
+
+  #good_vibes_img {
+    margin-bottom: 300px;
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  #cake_image_overlay {
+    margin: 18% 0;
+  }
+
+  #good_vibes_img {
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .padding_R {
+    padding-right: 15%;
+  }
+
+  #good_vibes_img {
+    margin-top: -20px;
+  }
+
+  .menu_items:before {
+    width: 33%;
+  }
+
+  .menu_items:after {
+    width: 33%;
+  }
+
+  .mi:before {
+    width: 37% !important;
+  }
+
+  .mi::after {
+    width: 37% !important;
+  }
+
+  #chef-2 {
+    margin-top: -245px;
+  }
+
+  #cake_image_overlay {
+    margin: 19% 0;
+  }
+
+  .Reservation_container_col2 {
+    width: 80%;
+  }
+
+  .Reservation_container_col1 {
+    width: 10%;
+  }
+
+  .Reservation_container_col3 {
+    width: 10%;
+  }
+
+  .quotes_avatar_text {
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width:1200px) {
+  #good_vibes_img {
+    margin-top: 10px;
+  }
+
+  .menu_items:before {
+    width: 31%;
+  }
+
+  .menu_items:after {
+    width: 31%;
+  }
+
+  .mi:before {
+    width: 35% !important;
+  }
+
+  .mi::after {
+    width: 35% !important;
+  }
+
+  #chef-2 {
+    margin-top: -176px;
+  }
+
+  #cake_image_overlay {
+    margin: 22% 0;
+  }
+
+  .quotes_avatar_text {
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width:1150px) {
+  #nav_reservation:hover {
+    border: none;
+    box-shadow: none;
+    background-color: #1A1A1A;
+    border-top: 1px solid #333333;
+  }
+
+  #nav_reservation {
+    border-bottom: 5px solid white;
+  }
+
+  #nav_reservation button {
+    color: white;
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    background: none;
+    margin: -7px 0;
+  }
+
+  #nav_reservation button:hover {
+    box-shadow: 0px 2px 8px 2px #aaa;
+    background-color: rgba(0, 0, 0, 0.449);
+  }
+
+  #nav_reservation {
+    place-items: center;
+    border: none;
+  }
+
+  #nav_buttons {
+    position: absolute;
+    top: 14%;
+    width: 100% !important;
+    right: 0;
+  }
+
+  #nav_buttons li a {
+    width: 100%;
+    margin: 0;
+  }
+
+  #nav_buttons li {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 25px 0;
+    box-sizing: border-box;
+    background-color: #1A1A1A;
+    border-top: 1px solid #333;
+  }
+
+  /* (B) SHOW HAMBURGER ICON */
+  .container label {
+    display: inline-block;
+    color: white;
+    font-style: normal;
+    font-size: 2.5em;
+  }
+
+  /* (C) TOGGLE SHOW/HIDE MENU */
+  #nav_buttons li {
+    display: none !important;
+  }
+
+  #hamburger:checked+#nav_buttons li {
+    display: grid !important;
+  }
+
+
+  .menu_items:before {
+    width: 30%;
+  }
+
+  .menu_items:after {
+    width: 30%;
+  }
+
+  .mi:before {
+    width: 34% !important;
+  }
+
+  .mi::after {
+    width: 34% !important;
+  }
+
+  .quotes_avatar_text {
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  #cake_image_overlay {
+    margin: 24% 0;
+  }
+
+  #chef-2 {
+    margin-top: -141px;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  #chef-2 {
+    margin-top: -82px;
+  }
+
+  .quotes_avatar_text {
+    line-height: 25px;
+  }
+
+  #cake_image_overlay {
+    display: none;
+  }
+
+  .footer_col {
+    width: 50%;
+  }
+
+  .fa1 {
+    font-size: 1.5rem !important;
+  }
+
+  .olcolumn {
+    padding-bottom: 100px;
+  }
+
+  .footer_col {
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .footer_medium_bold {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .add {
+    padding-top: 40px;
+  }
+
+  #scrollnow,
+  .vl {
+    display: none;
+  }
+
+  .black_background {
+    margin-top: 0;
+  }
+
+  #good_vibes_img {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #Good_vibes {
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #cozy-place {
+    margin-top: 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  #relax-atmosphere {
+    margin-top: 0 !important;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .relax_column {
+    display: grid;
+    place-items: center;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    width: 100% !important;
+  }
+
+  #relax_atmosphere_con {
+    width: 49%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+  }
+
+  .atmosphere_img_radius {
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+  }
+
+  .good_vibes_row_columnL {
+    margin-top: 3%;
+    width: 49% !important;
+    float: right;
+  }
+
+  .atmosphere_padding_R {
+    padding-right: 0;
+  }
+
+  .row_columnR {
+    width: 49%;
+    text-align: center;
+  }
+
+  .row_columnL {
+    text-align: center;
+    width: 100%;
+  }
+
+  #relax-atmosphere {
+    margin-top: 1.5%;
+  }
+
+  #cofee_img {
+    display: none;
+  }
+
+  .menu_items:before {
+    width: 28%;
+  }
+
+  .menu_items:after {
+    width: 28%;
+  }
+
+  .mi:before {
+    width: 32% !important;
+  }
+
+  .mi::after {
+    width: 32% !important;
+  }
+
+  #chef-2 {
+    margin-top: -25px;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .quotes_avatar_text {
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width:800px) {
+  .add {
+    margin: 20px;
+  }
+
+  #header_content {
+    font-size: 3rem;
+  }
+
+  .menu_items:before {
+    width: 25%;
+  }
+
+  .menu_items:after {
+    width: 25%;
+  }
+
+  .signature_menu_head {
+    font-size: 3rem;
+  }
+
+  .gallery_image {
+    width: 50%;
+    display: grid;
+    place-items: center;
+  }
+
+  .gallery img {
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+  }
+
+  #chef-3 {
+    display: none;
+  }
+
+  #chef-3_copy {
+    display: block;
+  }
+
+  .team_row_column {
+    width: 100%;
+  }
+
+  .team_row_columnL {
+    width: 33%;
+  }
+
+  .team_row_columnR {
+    width: 33%;
+  }
+
+  #chef-1 {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+    margin-top: 20px !important;
+  }
+
+  #chef-2 {
+    width: 100% !important;
+    border-radius: 10px;
+    margin: 3px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+    margin-top: 40px !important;
+  }
+
+  #chef-3_copy {
+    width: 100% !important;
+    border-radius: 10px;
+    margin: 4px;
+    box-shadow: 0px 2px 30px 2px #aaa;
+    margin-top: 20px !important;
+  }
+
+  .chef_padding_R {
+    padding-right: 0;
+  }
+
+  .chef_container img {
+    margin-top: 0 !important;
+
+  }
+
+  .chef_padding_R p {
+    padding-right: 0 !important;
+  }
+
+  .teamdesc {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contenth1 {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width:725px) {
+  .menu_items:before {
+    width: 24%;
+  }
+
+  .menu_items:after {
+    width: 24%;
+  }
+
+  .mi:before {
+    width: 30% !important;
+  }
+
+  .mi::after {
+    width: 30% !important;
+  }
+
+  .chef_padding_R {
+    padding-right: 0;
+  }
+
+  .chef_padding_R p {
+    padding-right: 0 !important;
+  }
+
+  .footer_medium_bold {
+    padding-right: 0;
+  }
+
+  .Reservation_container_col2 {
+    width: 100%;
+  }
+
+  .olcolumn {
+    padding-bottom: 0;
+  }
+
+  #footer_reservation {
+    margin-top: 10%;
+  }
+
+  #footer_logo_table {
+    text-align: center;
+    display: grid;
+    place-items: center;
+  }
+
+  .clock_icon {
+    width: 20%;
+    margin-top: 0 !important;
+  }
+
+  .timing_col {
+    overflow: auto;
+  }
+
+  #copy_row {
+    text-align: center;
+    grid-template-columns: none;
+  }
+
+  .top_mar_5 {
+    margin-top: 1%;
+  }
+
+  .top_mar_7 {
+    margin-top: 1.5%;
+  }
+
+  #clock_icon_table {
+    text-align: left;
+  }
+
+  .tr_Reservation {
+    text-align: center;
+  }
+
+  #pow_deli {
+    text-align: center;
+  }
+
+  .footer_col {
+    width: 100%;
+    margin-top: 10%;
+    text-align: center;
+    float: none;
+  }
+
+  .quotes_avatar_card_container {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 20%;
+  }
+
+  .quotes_avatar_text {
+    font-size: 3.2vw;
+    line-height: 34px;
+  }
+
+  #testimonial_image_container {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .menu_heading {
+    text-align: center;
+  }
+
+  .menu_row {
+    grid-template-columns: none;
+    text-align: center;
+  }
+
+  .menu_items:before {
+    display: none;
+  }
+
+  .menu_items:after {
+    display: none;
+  }
+
+  .mi:before {
+    width: 28% !important;
+  }
+
+  .mi::after {
+    width: 28% !important;
+  }
+
+  .contenth1 {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (max-width:500px) {
+  #relax_atmosphere_con {
+    width: 100%;
+  }
+
+  .row_columnR {
+    width: 100%;
+  }
+
+  .good_vibes_row_columnL {
+    width: 100% !important;
+  }
+
+  .menu_items {
+    font-size: 10vw;
+  }
+
+  .mi:before {
+    display: none;
+  }
+
+  .mi::after {
+    display: none;
+  }
+
+  .signature_menu_head {
+    font-size: 11vw;
+  }
+
+  .signature_menu_text {
+    font-size: 1rem;
+  }
+
+  .quotes_avatar_text {
+    font-size: 4vw;
+    overflow: hidden;
+  }
+
+  .team_row_columnL {
+    width: 100%;
+  }
+
+  .team_row_columnR {
+    width: 100%;
+  }
+
+  .gallery_image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:330px) {
+  #header_content {
+    font-size: 2.5rem;
+  }
+
+}
+
+@media screen and (width:912px) and (height:1368px) {
+  .header {
+    height: 100%;
+  }
+}
+
+@media screen and (width:768px) and (height:1024px) {
+  .header {
+    height: 60vh;
+  }
+}
